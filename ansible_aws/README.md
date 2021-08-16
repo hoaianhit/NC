@@ -56,6 +56,10 @@ ansible.cfg file include:
     d. Create a Route Table on created VPC, then add a default route target to new created Internet Gateway
 
     ![Create New Route Table](pictures/new_routetable.PNG)
+    
+    e. Create Key pair hat Ansible Mgmt box can use it to ssh to EC2 instances
+
+    f. Create User and save the aws_access_key_id and aws_secret_access_key 
 
 2. Start Ansible Mgmt box on local using command "Vagrant up"
 
