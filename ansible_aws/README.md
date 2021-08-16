@@ -34,7 +34,7 @@ ansible.cfg file include:
 
 # LAB STRUCTURE
 
-![Lab Structure:](pictures\lab_structure.PNG)
+![Lab Structure:](pictures/lab_structure.PNG)
 
 
 # STEPs TO DEPLOY:
@@ -42,19 +42,19 @@ ansible.cfg file include:
 1. Pre-Configuration on AWS Management Console. This need to be manual prepared on AWS.
     a. Create a new VPC:
 
-    ![Create New VPC](pictures\new_vpc.PNG)
+    ![Create New VPC](pictures/new_vpc.PNG)
 
     b. Create a new Subnet under created VPC:
 
-    ![Create New Subnet](pictures\new_subnet.PNG)
+    ![Create New Subnet](pictures/new_subnet.PNG)
 
     c. Create an Internet Gateway and attach to created VPC
 
-    ![Create New Internet Gateway](pictures\new_IGW.PNG)
+    ![Create New Internet Gateway](pictures/new_IGW.PNG)
 
     d. Create a Route Table on created VPC, then add a default route target to new created Internet Gateway
 
-    ![Create New Route Table](pictures\new_routetable.PNG)
+    ![Create New Route Table](pictures/new_routetable.PNG)
 
 2. Start Ansible Mgmt box on local using command "Vagrant up"
 
@@ -79,7 +79,7 @@ PLAY RECAP *********************************************************************
     - Instance state: Running
     - Status Check: Passed
 
-    ![Check Instances Status](pictures\instance_status.PNG)
+    ![Check Instances Status](pictures/instance_status.PNG)
 
 
 
@@ -95,4 +95,4 @@ localhost                  : ok=1    changed=0    unreachable=0    failed=0    s
 
 8. Verify the configurarion is successful by open webrowser, and input public IP and port of Loadbalancer box.
 
-    ![Verify HAProxy](pictures\verify_haproxy.PNG)
+    ![Verify HAProxy](pictures/verify_haproxy.PNG)
