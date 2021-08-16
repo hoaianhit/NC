@@ -64,6 +64,7 @@ ansible.cfg file include:
 4. Go to aws folder: cd provision/aws
 
 5. Run ansible-playbook to create Lab Infrastructure: Security Group, EC2 Instances
+    
     [vagrant@mgmt aws]$ ansible-playbook LoadBalancer.yml
     ...
     ...
@@ -77,6 +78,7 @@ PLAY RECAP *********************************************************************
 
 
 6. Check on AWS EC2 Instance page to make sure 3 Instances are created: 2 webserver, 1 labbalancer.
+    
     - Instance state: Running
     - Status Check: Passed
 
@@ -85,6 +87,7 @@ PLAY RECAP *********************************************************************
 
 
 7. Run ansible-playbook to Configurate for EC2 Isntances:
+    
     [vagrant@mgmt aws]$ ansible-playbook PlaybookConfiguration.yml 
     ...
     ...
@@ -96,4 +99,6 @@ localhost                  : ok=1    changed=0    unreachable=0    failed=0    s
 
 8. Verify the configurarion is successful by open webrowser, and input public IP and port of Loadbalancer box.
 
+
     ![Verify HAProxy](pictures/verify_haproxy.PNG)
+
