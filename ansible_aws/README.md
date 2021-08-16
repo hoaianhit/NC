@@ -57,9 +57,10 @@ ansible.cfg file include:
 
     ![Create New Route Table](pictures/new_routetable.PNG)
     
-    e. Create Key pair hat Ansible Mgmt box can use it to ssh to EC2 instances
+    e. Create Key pair hat Ansible Mgmt box can use it to ssh to EC2 instances and update value to myrdr66.pem
 
-    f. Create User and save the aws_access_key_id and aws_secret_access_key 
+    f. Create User and save the aws_access_key_id and aws_secret_access_key and update value to this file:
+        secret/aws_credentials.yml
 
 2. Start Ansible Mgmt box on local using command "Vagrant up"
 
