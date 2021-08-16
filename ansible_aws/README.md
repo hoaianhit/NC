@@ -40,6 +40,7 @@ ansible.cfg file include:
 # STEPs TO DEPLOY:
 
 1. Pre-Configuration on AWS Management Console. This need to be manual prepared on AWS.
+    
     a. Create a new VPC:
 
     ![Create New VPC](pictures/new_vpc.PNG)
